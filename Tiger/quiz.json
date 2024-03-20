@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "question": "What is the national Bird of india?",
+    "options": ["Peacock", "Tiger", "Cheetah", "Whale"],
+    "answer": "Peacock",
+    "description": "Peacock is the national bird of india",
+  },
+  {
+    "id": 1,
+    "question": " What animal has the highest blood pressure?",
+    "options": ["Rhino", "Giraffe", "Tiger", "Kangaaroo"],
+    "answer": "Giraffe",
+    "description": "The giraffe has one of the highest blood pressures of any mammal. It reaches pressures of up to 280/180 mm Hg, which is twice that found in humans (120/80 mmHg).",
+  },
+  
+    
+]

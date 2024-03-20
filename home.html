@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ 
+ <link rel="icon" type="image/svg+xml" href="home_images/logo.jpg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EcoHolo Virtual ZOO</title>
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- custom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+
+#container {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+        }
+
+        #left {
+            width: 40%;
+           
+            color: #0a0000;
+            padding: 70px;
+            margin-left: 60px;
+            height: 500px;
+            box-shadow: #f5e3e3;
+        }
+
+        #right {
+            width: 40%;
+        
+            padding: 50px;
+      
+            margin-right: 60px;
+            height: 500px;
+        }
+
+        /* Add additional styling to make it more attractive */
+        #left h1 {
+            font-size: 36px;
+           
+        }
+
+        #left p {
+            font-size: 40px;
+            line-height: 1.6;
+        }
+
+        #right iframe {
+            width: 700px;
+            height: 400px;
+            border: none;
+            box-shadow: 10px 10px 10px #0a0000;
+        }
+
+    .Quote{
+        font-size: large;
+    }
+video{
+    margin-left: 45%;
+}
+ 
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-block-start: 5px;
+}
+
+ </style>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+<!-- header section starts  -->
+<header>
+    <div class="logo">
+        <div class="logo-container">
+          <img src="home_images/logo2.jpg" alt="">
+          <span class="logo-text">EcoHolo Virtual ZOO</span>
+        </div>
+      </div>
+      
+
+      
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <a href="#home"><i class="fas fa-home"></i> home</a>
+    <a href="#Menu"><i class="fas fa-laptop-code"></i> Gallery</a>
+    <style>
+
+
+    </style>
+    <a href="#" id="logoutLink"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </nav>
+  
+</header>
+
+
+
+<!-- header section ends -->
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Since you can't come to us, let the ZOO come to YOU!</h3>
+        <p>Missed any of our virtual zoo days? You can find all of our VIRTUAL ZOO DAYS on our EcoHolo Virtual ZOO page. The animals are waiting.</p>
+        <a href="#" class="btn">Welcome</a>
+    </div>
+    <div class="image">
+        <img src="index_images/a1.jpg" alt="">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Menu section starts  -->
+
+
+<section class="Menu" id="Menu">
+    <h1 class="heading">EcoHolo <span>Virtual</span> Zoo</h1>
+    <div class="box-container">
+        <div class="box">
+         
+            <img src="index_images/a1.jpg" alt="">
+            <h3>Extinct Fauna</h3>
+            <a href="#" class="btn" onclick="view()">View</a>
+          </div>
+          
+        <div class="box">
+          
+            <img src="index_images/a3.jpg" alt="">
+            <h3>Extant Fauna</h3>
+            <a href="#" class="btn" onclick="view1()">View</a>
+        </div>
+        <div class="box">
+       
+            <img src="plant1/rho.jpg" alt="">
+            <h3>Extinct Flora</h3>
+            <a href="#" class="btn" onclick="view2()">View</a>
+        </div>
+        <div class="box">
+         
+            <img src="plant1/lotos.jpeg" alt="">
+            <h3>Extant Fauna</h3>
+            <a href="#" class="btn" onclick="view3()">View</a>
+        </div>
+
+    </div>
+</section>
+
+<div id="container">
+    <div id="left">
+        
+        <p>"Nature provides a free lunch, but only if we control our appetites."
+<br>
+<br>
+            --William Ruckelshaus</p>
+    </div>
+    <div id="right">
+        <iframe src="4.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="share">
+        <a href="https://www.facebook.com" class="btn" onclick="openFacebook()" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" class="btn" onclick="openInstagram2()" target="_blank">twitter</a>
+        <a href="https://www.instagram.com" class="btn" onclick="openInstagram3()" target="_blank">instagram</a>
+        <a href="https://www.pinterest.com" class="btn" onclick="openInstagram4()" target="_blank">pinterest</a>
+        <a href="https://www.linkedin.com" class="btn" onclick="openInstagram()" target="_blank">linkedin</a>
+    </div>
+</section>
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#logoutLink').click(function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'index.html'; // Redirect to home.html
+        });
+    });
+</script>
+<script>
+
+function view() {
+    // Change the window location to "hello.html" when the button is clicked.
+    window.location.href = 'extinct.html';
+}
+
+</script>
+<script>
+
+  function view1() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'extant.html';
+  }
+  
+  </script>
+
+<script>
+
+  function view2() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'flora1.html';
+  }
+  
+  </script>
+
+<script>
+
+  function view3() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'flora2.html';
+  }
+  
+  </script>
+
+
+<script>
+    function openFacebook() {
+        window.open("https://www.facebook.com", "_blank");
+    }
+    </script>
+
+</body>
+</html>

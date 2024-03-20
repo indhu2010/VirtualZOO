@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <style>
+        /* Style for the 3D model container */
+        #model-container {
+            width: 100%;
+            height: 500px; /* Set the desired height for your 3D model */
+        }
+    </style>
+</head>
+<body>
+    <div id="model-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <script>
+        // Create a scene
+        const scene = new THREE.Scene();
+
+        // Create a camera
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        
+        // Create a WebGLRenderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, 500); // Set the same height as the container
+        document.getElementById('model-container').appendChild(renderer.domElement);
+        
+        // Load the GLTF model
+        const loader = new THREE.GLTFLoader();
+        loader.load('scene.gltf', (gltf) => {
+            const model = gltf.scene;
+            scene.add(model);
+        });
+
+        // Set camera position
+        camera.position.z = 5;
+
+        // Add animation or interactivity as needed
+        const animate = () => {
+            requestAnimationFrame(animate);
+            // Add any animations or interactivity here
+            renderer.render(scene, camera);
+        };
+        
+        animate();
+    </script>
+</body>
+</html>

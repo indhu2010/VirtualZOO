@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rihnoceros
+* source:	https://sketchfab.com/3d-models/rihnoceros-9ba66156fd0d4b81813bcf81a22292de
+* author:	zisisbad (https://sketchfab.com/zisisbad)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rihnoceros" (https://sketchfab.com/3d-models/rihnoceros-9ba66156fd0d4b81813bcf81a22292de) by zisisbad (https://sketchfab.com/zisisbad) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

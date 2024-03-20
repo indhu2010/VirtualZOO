@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "question": "What is the Nation animal of  india?",
+    "options": ["Peacock", "Tiger", "Cheetah", "Whale"],
+    "answer": "Peacock",
+    "description": "...."
+  },
+  {
+    "id": 2,
+    "question": "What family do horses belong to?",
+    "options": [
+      "Equidae",
+      "Canidae",
+      "Felidae",
+      " Bovidae"
+    ],
+    "answer": "Equidae",
+    "description": "....."
+  },
+  {
+    "id": 3,
+    "question": "What causes the distinctive white fur with black or dark brown stripes in White Tigers?",
+    "options": [
+      "Albinism",
+      "Genetic mutation",
+      "Environmental factors",
+      "Diet"
+    ],
+    "answer": "Genetic mutation",
+    "description": "...."
+  },
+  {
+    "id": 4,
+    "question": "What is the term for a place where animals from various species are kept for public exhibition and education?",
+    "options": [
+      "Sanctuary",
+      "Wildlife Reserve",
+      "Zoo",
+      "Conservation Center"
+    ],
+    "answer": "Zoo",
+    "description": ".."
+  },
+  {
+    "id": 5,
+    "question": " What is the largest species of shark?",
+    "options": ["Hammerhead Shark", "Great White Shark", "Whale Shark", "Tiger Shark"],
+    "answer": "Whale Shark",
+    "description": "..."
+  },
+  {
+    "id": 6,
+    "question": "Which animal is known as the ship of the desert?",
+    "options": [
+      "Elephant",
+      "Giraffe",
+      "Camel",
+      "Horse"
+    ],
+    "answer": "Camel",
+    "description": "..."
+  }
+]

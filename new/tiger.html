@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <style>
+        /* Your CSS styles here */
+        .DivWithScroll {
+            height: 220px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .fancy
+        {
+            .fancy {
+  padding: 1px;
+  width: 100%;
+  height: 150px;
+  align-content: center;
+  box-sizing: border-box;
+box-shadow: 10px 10px ;
+  background-color: #e4e4d9;
+  margin: 15px;
+
+
+  background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+}
+
+        }
+        .fancy2
+        {
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased shadow intensity */
+            background-color: #e4e4d9;
+            border-radius: 10px; /* Add rounded corners */
+            position: relative; /* Added for z-index */
+        }
+        .youtube-edit {
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased shadow intensity */
+            background-color: #e4e4d9;
+            border-radius: 10px; /* Add rounded corners */
+            position: relative; /* Added for z-index */
+        }
+
+        .fancy::before,
+        .fancy2::before,
+        .youtube-edit::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px; /* Add rounded corners to the glow */
+            background: rgba(141, 163, 137, 0.4); /* Glow color */
+            z-index: -1;
+         
+        }
+
+        @keyframes glow {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.6;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        .model-container {
+            flex: 1;
+            /* Take up the entire left side */
+            overflow: hidden;
+            /* Hide any overflow */
+        }
+
+        .model-container model-viewer {
+            width: 100%;
+            height: 100vh;
+            /* Make the 3D model container the full viewport height */
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            position: relative; /* Added to position the circular button */
+        }
+
+        /* Circular button style */
+        .circular-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Makes the button circular */
+            background-color: #8da389; /* Background color of the button */
+            color: #fff; /* Text color of the button */
+            font-size: 20px;
+            display: flex;
+            margin: 0px;
+            align-items: center;
+            justify-content: center;
+            position: absolute; /* Position the button */
+            top: 20px; /* Adjust the top position */
+            left: 20px; /* Adjust the left position */
+            cursor: pointer;
+        }
+
+        .fancy2 {
+            background-color: #552586;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            padding: 4rem;
+            font-family: Garamond;
+        }
+
+        .fancy2::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: 15px;
+            right: 5px;
+            width: 50%;
+            top: 80%;
+            box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.7); /* Increased shadow intensity */
+            transform: rotate(4deg);
+        }
+
+        .youtube-edit {
+            text-align: center;
+            margin-top: 45px;
+            margin-left: 40px;
+        }
+
+        section {
+            padding: 2rem 15%;
+        }
+    </style>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="model-container">
+        <!-- 3D content for your site: -->
+        <model-viewer src="/Tiger/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
+    </div>
+
+    <div class="content">
+        <!-- Your content goes here -->
+        <div class="fancy">
+            <h1>Welcome to Eco Holo Virtual Zoo<br>White Tiger</h1>
+            <p style="font-size: 300%;"><b></b></p>
+        </div>
+        <div style="text-align: center;">
+            <iframe width="1000" height="415" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+        <div class="fancy2 DivWithScroll">
+            <p style="font-size: 135%;">
+                <!-- Your text here -->
+                
+                The White Tiger is a variant of the Bengal tiger known for its beautiful white fur adorned with black or
+                dark brown stripes. This particular condition is not caused by albinism but by a genetic mutation called
+                albinism because it has blue eyes and some pigmentation in its lines. White tigers are rare in the wild
+                and are often found in captivity due to their distinctive coloring that deters hunting. These tigers are
+                not a subspecies but are bred for their beauty, mostly in zoos and sanctuaries to learn about tiger
+                conservation. But this selective breeding raises concerns about genetic and health differences such as
+                malformations and physical weakness. White tigers and Bengal tigers exhibit a solitary behavior in
+                their habitats and are both human and territorial carnivores. They mostly hunt large animals that carry
+                strength and agility. White tigers also have cultural significance in countries such as India and are
+                symbols of power and majesty in myths and legends.
+            
+            </p>
+            <!-- Circular button -->
+            <button onclick="playAudio()" id="playButton" class="circular-button">Listen</button>
+            <audio id="audioPlayer" src="speech.mp3"></audio>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audioPlayer = document.getElementById('audioPlayer');
+            var playButton = document.getElementById('playButton');
+
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.textContent = 'Pause';
+            } else {
+                audioPlayer.pause();
+                playButton.textContent = 'Listen';
+            }
+        }
+    </script>
+</body>
+</html>

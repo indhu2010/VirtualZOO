@@ -1,0 +1,371 @@
+<html>
+  <head>
+    <link rel="icon" type="image/svg+xml" href="home_images/logo2.jpg" />
+
+ <title>EcoHolo Virtual ZOO</title>
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <style>
+      .signup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: none; /* Hide the signup box by default */
+  z-index: 2;
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-box label {
+  font-weight: bold;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-box button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: none; /* Hide the overlay by default */
+  z-index: 1;
+}
+
+
+    </style>
+    
+    <style>
+      .login-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        z-index: 9999;
+        text-align: center;
+      }
+    
+      .login-box h2 {
+        margin-bottom: 20px;
+      }
+    
+      .form-group {
+        margin-bottom: 10px;
+      }
+    
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+    
+      .login-box button[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: none; /* Hide the overlay by default */
+  z-index: 1;
+}
+    </style>
+    
+
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="landing-interact">
+        <div class="navbar">
+          <div class="branding">
+            <div><img class="logo" src="images/logo.jpg" /></div>
+            <div class="logo-title">EcoHolo Virtual ZOO</div>
+          </div>
+          <div class="links">
+            <div>
+              <button class="nav-button login" onclick="openLoginPage()">Login</button>
+
+            </div>
+            <div>
+             
+              <button class="nav-button sign" onclick="openSignupPage()">Sign up</button>
+
+            </div>
+          </div>
+        </div>
+        
+
+        <div id="login-box" class="login-box">
+          <h2>Login</h2>
+          <form id="login-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="login-username">Username:</label>
+              <input type="text" id="login-username" name="login-username" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <button type="submit" onclick="redirectToIndex1()">Log In</button>
+            <p>New to EcoHolo Virtual ZOO? <a href="#" onclick="openSignupBox()">Create an Account</a></p>
+          </form>
+        </div>
+        <script>
+           function openSignupBox() {
+      document.getElementById('login-box').style.display = 'none';
+      document.getElementById('signup-box').style.display = 'block';
+    }
+          </script>
+        
+       
+
+        <div id="signup-box" class="signup-box">
+          <h2>Create an Account</h2>
+          <form id="signup-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" onclick="redirectToIndex()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="openLoginBox()">Log In</a></p>
+          </form>
+        </div>
+        <script>
+          function openLoginBox() {
+            document.getElementById('login-box').style.display = 'block';
+            document.getElementById('signup-box').style.display = 'none';
+          }
+          </script>
+       <div id="overlay" class="overlay"></div>
+
+        
+        
+        
+        
+        <div class="title">
+          <div id="typewriter" class="changing"></div>
+          <div class="sub-title">Then explore the universe of this creative virtual zoo.</div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="search">
+          <select
+            id="selection"
+            onchange="updateSelection();"
+            class="search-bar"
+            type="text"
+            placeholder="Enter your delivery location"
+          >
+            <option value="" selected style="display: none"
+              >Login as a guset user</option
+            >
+            <option value="11">Explore the new diversity of animals</option>
+            
+          </select>
+          <a id="search" href="home.html"
+            ><button
+              disabled
+              id="search-button"
+              class="search-bar search-submit"
+              type="submit"
+            >
+              Explore
+            </button></a
+          >
+          <script>
+            function updateSelection() {
+              console.log("lol");
+              if (document.getElementById("selection").value == "") {
+                document.getElementById("search-button").disabled = true;
+              } else {
+                document.getElementById("search-button").disabled = false;
+              }
+            }
+          </script>
+        </div>
+        <div class=" cities ">
+          
+        </div>
+      </div>
+      <div class="landing-images ">
+        <img class="landing-image " src="images/5.jpg" />
+      </div>
+    </div>
+   
+  
+
+    <script>
+      const alertFunction = () => {
+        window.alert("App is in development... or is it?");
+      };
+    </script>
+    <script src="js/core.js"></script>
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Feeling curious about wildlife?",
+          "Unexpected rainy day?",
+          "Stuck at home?",
+          "Educational experience for kids?",
+          "Classroom field trip?"
+        ],
+        autoStart: true,
+        loop: true
+      });
+    </script>
+    
+    <script>
+     function openSignupPage() {
+  var signupBox = document.getElementById("signup-box");
+  var overlay = document.getElementById("overlay");
+
+  signupBox.style.display = "block";
+  overlay.style.display = "block";
+
+  // Add event listener to close the signup box when clicking outside of it
+  overlay.addEventListener("click", function () {
+    signupBox.style.display = "none";
+    overlay.style.display = "none";
+  });
+}
+ </script>
+<script>
+  function openLoginPage() {
+    var overlay = document.getElementById("overlay");
+    var loginBox = document.getElementById("login-box");
+
+    overlay.style.display = "block";
+    loginBox.style.display = "block";
+
+    overlay.addEventListener("click", function () {
+    loginBox.style.display = "none";
+    overlay.style.display = "none";
+  });
+  }
+</script>
+
+
+<script>
+  function redirectToIndex(event) {
+    event.preventDefault(); // Prevents the form submission if validation fails
+    
+    // Perform custom validation
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+
+    if (username === '' || email === '' || password === '' || confirmPassword === '') {
+      alert("Please fill in all fields.");
+      return false; // Stops the form from submitting
+    }
+    
+    window.location.href = "index.html"; 
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('signup-form');
+    form.addEventListener('submit', redirectToIndex);
+  });
+</script>
+
+<script>
+  function redirectToIndex1(event) {
+    event.preventDefault(); 
+
+    
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    
+    window.location.href = "home.html"; 
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('login-form');
+    form.addEventListener('submit', redirectToIndex1);
+  });
+</script>
+
+    
+
+  </body>
+</html>

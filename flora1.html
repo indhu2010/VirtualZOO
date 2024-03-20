@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ 
+ <link rel="icon" type="image/svg+xml" href="home_images/logo2.jpg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EcoHolo Virtual ZOO</title>
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- custom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-block-start: 5px;
+}
+
+/* Add this CSS to your stylesheet */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-home {
+        display: inline-block;
+        padding: 0.8rem 1.5rem; /* Reduce the horizontal padding */
+        border: 0.2rem solid var(--red);
+        color: var(--red);
+        cursor: pointer;
+        font-size: 1.7rem;
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        margin-top: 1rem;
+    }
+
+    .btn-home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--red);
+        transition: 0.3s linear;
+        z-index: -1;
+    }
+
+    .btn-home:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .btn-home:hover {
+        color: #fff;
+    }
+
+    /* Add this CSS to reduce the space between buttons */
+    .btn-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-container a {
+        margin-right: 10px; /* Adjust the margin between buttons */
+    }
+
+
+ </style>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+<!-- header section starts  -->
+
+
+
+
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">Our Extinct Flora <span> Gallery</span>
+        <div class="btn-container">
+            <a href="quiz.html" class="btn-home">Start Quiz</a>
+            <a href="home.html" class="btn-home">Home</a>
+        </div>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="plant1/mongolia.webp" alt="">
+            <div class="content">
+                <h3>Mongolia</h3>
+                <p>Magnolia is a large genus of about 210 to 340 flowering plant species in the subfamily Magnolioideae of the family Magnoliaceae. 
+                </p>
+                <a href="plant1/eg1/mognolia.html" class="btn-home">Explore</a>
+ 
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/alient.jpg" alt="">
+            <div class="content">
+                <h3>Alien flora</h3>
+                <p>Alien flora are plants that have been introduced to a region outside their native range by humans. These plants are often brought in as exotics, either intentionally or unintentionally
+                </p>
+                <a href="/plant1/eg2/alien.html" class="btn-home">Explore</a>
+   
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/rho.jpg" alt="">
+            <div class="content">
+                <h3>Rhododendron</h3>
+                <p>Rhododendron is a genus of flowering plants that includes over 1,000 species. The name comes from the Greek words “rhodo” (rose) and “dendron” (tree). </p>
+                <a href="/plant1/eg3/rhododendron.html" class="btn-home">Explore</a>
+     
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+        <div class="box">
+            <img src="plant1/low.jpg" alt="">
+            <div class="content">
+                <h3>Low poly glowing flower</h3>
+                <p>A low-poly glowing flower is a captivating digital art concept that merges the aesthetics of low-polygon 3D modeling with luminous.
+                </p>
+                <a href="/plant1/eg4/Low poly glowing flower.html" class="btn-home">Explore</a>
+
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/ff.jpg" alt="">
+            <div class="content">
+                <h3>Franklinia AlatamahaBear</h3>
+                <p>
+                    Franklinia alatamaha, commonly known as the Franklin tree, is an endangered tree native to the eastern United States,</p>
+                    <a href="Franklinia AlatamahaBear.html" class="btn-home">Explore</a>
+  
+            </div>
+        </div>
+
+ 
+    <div class="box">
+        <img src="plant1/plant2.webp" alt="">
+        <div class="content">
+            <h3>SophoraToromiro</h3>
+            <p>Sophora toromiro, also known as the toromiro tree, is an iconic and endangered tree on Easter Island in the remote South Pacific</p>
+            <a href="SophoraToromiro.html" class="btn-home">Explore</a>
+
+        </div>
+</div>
+</div>
+</section>
+
+
+
+  
+
+
+
+
+</body>
+</html>

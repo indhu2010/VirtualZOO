@@ -1,0 +1,11 @@
+Model Information:
+* title:	Raptor
+* source:	https://sketchfab.com/3d-models/raptor-d1ac9899ee9c48a8bcae53b69ee5a5e9
+* author:	firestorm3d (https://sketchfab.com/firestorm3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Raptor" (https://sketchfab.com/3d-models/raptor-d1ac9899ee9c48a8bcae53b69ee5a5e9) by firestorm3d (https://sketchfab.com/firestorm3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fishhook barrel cactus
+* source:	https://sketchfab.com/3d-models/fishhook-barrel-cactus-f0f63dfa7be8409ca456946d2ad3a62a
+* author:	GSXNet (https://sketchfab.com/gsxn)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fishhook barrel cactus" (https://sketchfab.com/3d-models/fishhook-barrel-cactus-f0f63dfa7be8409ca456946d2ad3a62a) by GSXNet (https://sketchfab.com/gsxn) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

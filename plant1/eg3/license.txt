@@ -1,0 +1,11 @@
+Model Information:
+* title:	AS17 Rhododendron Ponticum (Common Rhododendron)
+* source:	https://sketchfab.com/3d-models/as17-rhododendron-ponticum-common-rhododendron-ee44a53396644aaa960bdc273be8238e
+* author:	xfrog (https://sketchfab.com/xfrog)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AS17 Rhododendron Ponticum (Common Rhododendron)" (https://sketchfab.com/3d-models/as17-rhododendron-ponticum-common-rhododendron-ee44a53396644aaa960bdc273be8238e) by xfrog (https://sketchfab.com/xfrog) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

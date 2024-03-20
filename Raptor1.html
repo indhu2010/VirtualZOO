@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #116d6e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left {
+            flex-basis: 30%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            
+        }
+
+        .right {
+            flex-basis: 43%;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        .right-section {
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 20px 10px 10px black;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        audio {
+            width: 100%;
+        }
+        .model-container {
+            flex: 1;
+            /* Take up the entire left side */
+            overflow: hidden;
+            /* Hide any overflow */
+        }
+
+        .model-container model-viewer {
+            width: 100%;
+            height: 100vh;
+            /* Make the 3D model container the full viewport height */
+        }
+    </style>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Eco Holo Virtual Zoo</h1>
+    </div>
+    <div class="container">
+        <div class="left model-container model-viewer">
+            <model-viewer src="scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls auto-rotate ar>
+            </model-viewer>
+        </div>
+        <div class="right">
+            <div class="right-section">
+                <h2>Raptor</h2>
+                <p>  Raptors, or birds of prey, are a diverse group of carnivorous birds characterized by several key features. Firstly, their sharp, curved beaks are adapted for tearing flesh, while their powerful talons enable them to grasp and immobilize their prey. Raptors also possess excellent vision, with keen eyesight that aids in hunting, often with binocular vision for accurate depth perception. Their superb aerial skills, including soaring and swift flight, make them effective hunters. These birds are typically apex predators, occupying the top of the food chain in various ecosystems. Lastly, raptors play vital roles in maintaining ecological balance by controlling prey populations, making them essential components of many ecosystems and embodying the majesty of the natural world.              
+                </p>
+            </div>
+            <div class="right-section">
+                <h2>Audio Player</h2>
+                <audio controls>
+                    <source src="Raptor4.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="right-section">
+                <h2>YouTube Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RmWCx3Cc6Ww?si=Ee38PfuJu3WJG_iu" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

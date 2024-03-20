@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ 
+ <link rel="icon" type="image/svg+xml" href="home_images/logo2.jpg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EcoHolo Virtual ZOO</title>
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- custom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-block-start: 5px;
+}
+
+/* Add this CSS to your stylesheet */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-home {
+        display: inline-block;
+        padding: 0.8rem 1.5rem; /* Reduce the horizontal padding */
+        border: 0.2rem solid var(--red);
+        color: var(--red);
+        cursor: pointer;
+        font-size: 1.7rem;
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        margin-top: 1rem;
+    }
+
+    .btn-home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--red);
+        transition: 0.3s linear;
+        z-index: -1;
+    }
+
+    .btn-home:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .btn-home:hover {
+        color: #fff;
+    }
+
+    /* Add this CSS to reduce the space between buttons */
+    .btn-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-container a {
+        margin-right: 10px; /* Adjust the margin between buttons */
+    }
+
+
+
+ </style>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+<!-- header section starts  -->
+
+
+
+
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">Our Extinct Fauna <span>Gallery</span>
+        <div class="btn-container">
+            <a href="quiz.html" class="btn-home">Start Quiz</a>
+            <a href="home.html" class="btn-home">Home</a>
+        </div>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="extinct/tiger.jpg" alt="">
+            <div class="content">
+                <h3>White Tiger</h3>
+                <p>The white tiger, scientifically known as Panthera tigris tigris, is an extinct animal known for its striking appearance</p>
+                <a href="tiger.html" class="btn-home">Explore</a>
+ 
+            </div>
+        </div>
+        <div class="box">
+            <img src="extinct/dodo.jpg" alt="">
+            <div class="content">
+                <h3>Dodo</h3>
+                <p>The dodo bird, scientifically known as Raphus cucullatus, is an extinct flightless bird famous for its unique appearance </p>
+                <a href="tiger.html" class="btn-home">Explore</a>
+   
+            </div>
+        </div>
+        <div class="box">
+            <img src="extinct/din.jpg" alt="">
+            <div class="content">
+                <h3>Dinosaur</h3>
+                <p>Dinosaurs, scientifically known as Dinosauroidea, were a diverse group of reptiles that lived millions of years ago during the Mesozoic Era</p>
+                <a href="Dinosaur.html" class="btn-home">Explore</a>
+     
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+        <div class="box">
+            <img src="extinct/ele.jpg" alt="">
+            <div class="content">
+                <h3>Woolly mammoth</h3>
+                <p>The woolly mammoth, scientifically known as Mammuthus primigenius, was a prehistoric elephant species recognized for its shaggy coat and large curved tusks</p>
+                <a href="tiger.html" class="btn-home">Explore</a>
+
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="extinct/tig.jpg" alt="">
+            <div class="content">
+                <h3>Sabre-toothed Tigers</h3>
+                <p>Sabre-toothed tigers, scientifically known as Smilodon, were a group of extinct carnivorous mammals distinguished by their long, curved canine teeth, which were used for hunting.</p>
+                <a href="tiger.html" class="btn-home">Explore</a>
+  
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="extinct/raptor.jpg" alt="">
+            <div class="content">
+                <h3>Raptor</h3>
+                <p>Raptors, also known as birds of prey, are a diverse group of birds known for their impressive characteristics and contributions to ecosystems.</p>
+                <a href="raptor1.html" class="btn-home">Explore</a>
+    
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+        <div class="box">
+            <img src="extinct/rhino.jpg" alt="">
+            <div class="content">
+                <h3>Woolly rhinoceros</h3>
+                <p>The woolly rhinoceros, scientifically known as Coelodonta antiquitatis, was a prehistoric rhinoceros species known for its thick, shaggy fur and distinctive horn structures.</p>
+                <a href="WoollyRhinoceros.html" class="btn-home">Explore</a>
+   
+            </div>
+
+        </div>
+        <div class="box">
+            <img src="extinct/ox.jpg" alt="">
+            <div class="content">
+                <h3>Ash-Black Dire wolf</h3>
+                <p>I'm sorry, but I couldn't find any information on an "Ash-Black Dire wolf" as a distinct species or subspecies of wolf or canid.</p>
+                <a href="tiger.html" class="btn-home">Explore</a>
+ 
+            </div>
+    </div>
+    <div class="box">
+        <img src="extinct/sea.jpg" alt="">
+        <div class="content">
+            <h3>Stellers Sea Cow</h3>
+            <p>The Steller's sea cow, scientifically known as Hydrodamalis gigas, was a massive marine mammal that inhabited the waters of the North Pacific.</p>
+            <a href="Stellerseacow.html" class="btn-home">Explore</a>
+
+        </div>
+</div>
+</div>
+</section>
+
+
+
+  
+<!-- footer section  -->
+<section class="footer">
+    <div class="share">
+        <a href="https://www.facebook.com" class="btn" onclick="openFacebook()" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" class="btn" onclick="openInstagram2()" target="_blank">twitter</a>
+        <a href="https://www.instagram.com" class="btn" onclick="openInstagram3()" target="_blank">instagram</a>
+        <a href="https://www.pinterest.com" class="btn" onclick="openInstagram4()" target="_blank">pinterest</a>
+        <a href="https://www.linkedin.com" class="btn" onclick="openInstagram()" target="_blank">linkedin</a>
+    </div>
+</section>
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#logoutLink').click(function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'index.html'; // Redirect to home.html
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

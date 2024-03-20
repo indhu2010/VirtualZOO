@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ 
+ <link rel="icon" type="image/svg+xml" href="home_images/logo2.jpg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EcoHolo Virtual ZOO</title>
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- custom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-block-start: 5px;
+}
+
+/* Add this CSS to your stylesheet */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-home {
+        display: inline-block;
+        padding: 0.8rem 1.5rem; /* Reduce the horizontal padding */
+        border: 0.2rem solid var(--red);
+        color: var(--red);
+        cursor: pointer;
+        font-size: 1.7rem;
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        margin-top: 1rem;
+    }
+
+    .btn-home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--red);
+        transition: 0.3s linear;
+        z-index: -1;
+    }
+
+    .btn-home:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .btn-home:hover {
+        color: #fff;
+    }
+
+    /* Add this CSS to reduce the space between buttons */
+    .btn-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-container a {
+        margin-right: 10px; /* Adjust the margin between buttons */
+    }
+
+
+
+ </style>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+<!-- header section starts  -->
+
+
+
+
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">Our Extant Flora <span>Gallery</span>
+        <div class="btn-container">
+            <a href="quiz.html" class="btn-home">Start Quiz</a>
+            <a href="home.html" class="btn-home">Home</a>
+        </div>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="plant1/Forest.jpeg" alt="">
+            <div class="content">
+                <h3>Forset</h3>
+                <p>Forests, in their own distinct way, are remarkable natural ecosystems known for their unique qualities and significant contributions to the planet.
+                </p>
+                <a href="plant.html" class="btn-home">Explore</a>
+ 
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/lotos.jpeg" alt="">
+            <div class="content">
+                <h3>Rose</h3>
+                <p>Roses are a type of shrub that are known for their beauty. They are members of the genus Rosa, which includes over 300 species and tens of thousands of cultivars.
+                </p>
+                <a href="plant1/rose.html" class="btn-home">Explore</a>
+   
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/cactus.webp" alt="">
+            <div class="content">
+                <h3>Cactus</h3>
+                <p>Fishhook barrel cactus (Ferocactus wislizeni) is a succulent plant that can grow 6 to 10 feet tall and 18 to 30 inches in diameter. .</p>
+                <a href="plant1/eg5/cactus.html" class="btn-home">Explore</a>
+     
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+        <div class="box">
+            <img src="plant1/sun.jpg" alt="">
+            <div class="content">
+                <h3>Sunflower</h3>
+                <p>Sunflowers are annual plants with large flowers that can reach up to 3 meters in height. The flower head has many small flowers.
+                </p>
+                <a href="plant1/eg6/sunflower.html" class="btn-home">Explore</a>
+
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="plant1/bam.jpg" alt="">
+            <div class="content">
+                <h3>Bamboo</h3>
+                <p>
+                    Lucky bamboo is a popular indoor plant said to bring good luck and prosperity. Also known as dracaena or ribbon plant.</p>
+                    <a href="plant1/eg7/Bamboo.html" class="btn-home">Explore</a>
+  
+            </div>
+        </div>
+   
+
+    <div class="box">
+        <img src="plant1/jj.jpg" alt="">
+        <div class="content">
+            <h3>Jade</h3>
+            <p>Magnolia, also known as powder grass or silver grass, is a succulent plant native to South Africa and Mozambique.</p>
+            <a href="plant1/eg8/jade.html" class="btn-home">Explore</a>
+
+        </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>

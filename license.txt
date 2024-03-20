@@ -1,0 +1,11 @@
+Model Information:
+* title:	Raptor
+* source:	https://sketchfab.com/3d-models/raptor-ce7173660d234cd0a542f32d6d14b711
+* author:	Hiago Tadeu (https://sketchfab.com/HiagoTadeu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Raptor" (https://sketchfab.com/3d-models/raptor-ce7173660d234cd0a542f32d6d14b711) by Hiago Tadeu (https://sketchfab.com/HiagoTadeu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
