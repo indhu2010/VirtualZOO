@@ -29,14 +29,21 @@ virtual space using pre-recorded videos of teachers from around the world.
 
 ## Screenshots
 * HOME PAGE(containing login and signup pages)
-  ![Screenshot (1356)](https://github.com/AmanS09/3D-zoo/assets/123250285/a74f3e2f-55ed-4d1f-926f-975790eca4d0)
+  ![Screenshot 2024-03-20 215935](https://github.com/indhu2010/VirtualZOO/assets/123257572/875a81f2-0c70-4b57-b8c3-63b6c222b149)
 
 * MAIN PAGE
-  ![Screenshot (1358)](https://github.com/AmanS09/3D-zoo/assets/123250285/bec87589-e4ee-4839-9bbe-ffd05e49c255)
+ ![Screenshot 2024-03-20 220010](https://github.com/indhu2010/VirtualZOO/assets/123257572/f59983f4-bec1-47d1-b26b-d1530409acf1)
+
 
 * GALLERY
-  ![Screenshot (1360)](https://github.com/AmanS09/3D-zoo/assets/123250285/ff3f9b1c-e6ad-4f6d-8e47-306b1d723771)
+ ![Screenshot 2024-03-20 223706](https://github.com/indhu2010/VirtualZOO/assets/123257572/c30e4922-f173-4c9d-9df0-4e8a61b12bf4)
+
 
 *3D-IMPLEMENTATION
 
- https://github.com/AmanS09/3D-zoo/assets/123250285/10a9374b-57f6-48cf-9e9f-9f74cc98ea86
+https://github.com/indhu2010/VirtualZOO/assets/123257572/1300ae3e-19ec-417c-be4c-6e9f83642a02
+
+
+*Quiz 
+
+![Screenshot 2024-03-20 224436](https://github.com/indhu2010/VirtualZOO/assets/123257572/898417dc-5e44-490f-a4de-7dd8b19dbe7e)
