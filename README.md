@@ -2,7 +2,7 @@
 # [live site](https://ecoholo-virtual-zoo.netlify.app/)
 
 
-# EcoHolo Virtual ZOO
+## EcoHolo Virtual ZOO (Team Project)
 
 3D implementation of existing and extinct species of flora and fauna to depict complex ecosystems from various parts of the world. 
 The virtual zoo could be displayed in schools, museums, and Ministries without using much physical space. The zoo could also hold educational sessions about the environment within the 
